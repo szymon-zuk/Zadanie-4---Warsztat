@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gra w zgadywanie liczb 3</title>
+</head>
+<body>
+<form action="/guessing" method="POST">
+My guess is:<br>
+<p> {guess} </p><br>
+<input type="hidden" name="min" value="{min}">
+<input type="hidden" name="max" value="{max}">
+<input type="hidden" name="guess" value="{guess}">
+<input name="feedback" type="submit" value="Too big"></input>
+<input name="feedback" type="submit" value="Too small"></input>
+<input name="feedback" type="submit" value="You win"></input>
+</form>
+</body>
+</html>
